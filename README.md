@@ -154,7 +154,7 @@
         </main>
 
         <footer>
-            <p>&copy; 2025 Seu Site | Engenharia Agronômica. Todos os direitos reservados.</p>
+            <p>&copy; 2025  | Geociencias. Todos os direitos reservados.</p>
         </footer>
     </div>
 
