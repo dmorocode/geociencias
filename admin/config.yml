@@ -1,10 +1,12 @@
-# admin/config.yml - VERSÃO FINAL E CORRIGIDA
+# admin/config.yml - NOVA ESTRATÉGIA
 
 backend:
   name: github
   repo: "dmorocode/geociencias"
   branch: main
-  # A linha abaixo força o uso do fluxo de autenticação correto do GitHub
+  # A linha abaixo foi ADICIONADA para forçar o login via pop-up
+  auth_type: 'implicit' 
+  # A linha abaixo pode ser removida se a de cima funcionar, mas a manteremos por segurança
   auth_endpoint: https://decap-cms-github-oauth-provider-z34m.onrender.com
 
 media_folder: "assets/images"
