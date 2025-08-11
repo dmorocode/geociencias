@@ -1,11 +1,8 @@
 # admin/config.yml - NOVA ESTRATÉGIA
 
 backend:
-  name: github
-  repo: "dmorocode/geociencias"
+  name: git-gateway
   branch: main
-  auth_type: 'pkce'
-  auth_endpoint: https://geociencias.onrender.com/auth
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
