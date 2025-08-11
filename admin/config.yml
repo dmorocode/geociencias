@@ -1,0 +1,22 @@
+# admin/config.yml - CORRIGIDO
+
+backend:
+  name: github
+  # A linha abaixo foi corrigida com seu usuário e repositório
+  repo: "dmorocode/geociencias"
+  branch: main
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "posts"
+    label: "Matérias"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Data de Publicação", name: "date", widget: "datetime" }
+      - { label: "Imagem de Destaque", name: "image", widget: "image", required: false }
+      - { label: "Conteúdo da Matéria", name: "body", widget: "markdown" }
