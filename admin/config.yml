@@ -1,7 +1,8 @@
 # admin/config.yml - NOVA ESTRATÉGIA
 
 backend:
-  name: git-gateway
+  name: github
+  repo: dmorocode/geociencias
   branch: main
 
 media_folder: "assets/images"
