@@ -1,16 +1,19 @@
-backend:
-  name: git-gateway
-  branch: main
+# _config.yml - CONFIGURADO PARA DOMÍNIO PERSONALIZADO
 
-media_folder: "images"
-public_folder: "/images"
+title: O Meu Site de Matérias
+description: "Um site para publicar textos e fotos sobre meus interesses."
+# Para domínios personalizados, baseurl deve ser vazio
+baseurl: ""
+# URL principal do seu site
+url: "https://geociencias.site"
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
 
 collections:
-  - name: "posts"
-    label: "Posts"
-    folder: "_posts"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+  posts:
+    output: true
+    permalink: /:title/
