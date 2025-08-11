@@ -3,7 +3,7 @@
 title: O Meu Site de Matérias
 description: "Um site para publicar textos e fotos sobre meus interesses."
 baseurl: "https://geociencias.site/" # Mantenha vazio se o repositório for nomeado seu-usuario.github.io
-url: "https://dmorocode.github.io" # Substitua 'seu-usuario'
+url: "https://geociencias.site" # Substitua 'seu-usuario'
 
 # Build settings
 markdown: kramdown
