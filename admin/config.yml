@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # admin/config.yml
 
 # Backend: onde o conteúdo será salvo. Neste caso, o seu repositório GitHub.
@@ -23,3 +24,4 @@ collections:
       - { label: "Data de Publicação", name: "date", widget: "datetime" }
       - { label: "Imagem de Destaque", name: "image", widget: "image", required: false }
       - { label: "Conteúdo da Matéria", name: "body", widget: "markdown" }
+=======

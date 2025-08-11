@@ -1,18 +1,16 @@
-# _config.yml
+backend:
+  name: git-gateway
+  branch: main
 
-title: O Meu Site de Matérias
-description: "Um site para publicar textos e fotos sobre meus interesses."
-baseurl: "https://geociencias.site/" # Mantenha vazio se o repositório for nomeado seu-usuario.github.io
-url: "https://dmorocode.github.io" # Substitua 'seu-usuario'
+media_folder: "images"
+public_folder: "/images"
 
-# Build settings
-markdown: kramdown
-theme: minima # Você pode remover isso se quiser um estilo 100% customizado
-plugins:
-  - jekyll-feed
-
-# Coleção para as matérias que o Decap CMS irá gerenciar
 collections:
-  posts:
-    output: true
-    permalink: /:title/
+  - name: "posts"
+    label: "Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
