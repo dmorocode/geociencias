@@ -1,0 +1,22 @@
+---
+# index.html
+layout: default
+title: Home
+---
+
+<h1>Últimas Matérias</h1>
+
+<ul class="post-list">
+  {% for post in site.posts %}
+    <li>
+      <h2>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </h2>
+      <p class="post-meta">{{ post.date | date: "%d de %B de %Y" }}</p>
+      {% if post.image %}
+        <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="post-thumbnail">
+      {% endif %}
+      <p>{{ post.excerpt }}</p>
+    </li>
+  {% endfor %}
+</ul>
