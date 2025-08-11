@@ -1,10 +1,11 @@
-# admin/config.yml - CORRIGIDO
+# admin/config.yml - VERSÃO FINAL E CORRIGIDA
 
 backend:
   name: github
-  # A linha abaixo foi corrigida com seu usuário e repositório
   repo: "dmorocode/geociencias"
   branch: main
+  # A linha abaixo força o uso do fluxo de autenticação correto do GitHub
+  auth_endpoint: https://decap-cms-github-oauth-provider-z34m.onrender.com
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
