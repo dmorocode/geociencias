@@ -74,6 +74,7 @@ PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
+  bundler
   jekyll
 
 BUNDLED WITH
